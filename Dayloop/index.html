@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-title" content="Dayloop" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="apple-touch-icon" href="src/img/icon.jpeg" />
+    <link rel="stylesheet" href="css/light.css" />
+    <link rel="stylesheet" href="css/dark.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/gen.css" />
+    <title>Dayloop</title>
+  </head>
+  <body>
+    <header class="header">
+      <p class="text-center color-primary block">Your Daily Loop</p>
+    </header>
+    <section class="task-list" id="task-list"></section>
+    <div class="add-task" onclick="UI.setScreen('addtaskscreen', true)">
+      <span>Add daily task</span>
+    </div>
+    <div id="addtaskscreen" class="screen">
+      <header class="header">
+        <p class="text-center color-primary block">Create Task</p>
+      </header>
+      <button class="close-btn" onclick="UI.setScreen('addtaskscreen', false)">
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+      <div class="task-creator">
+        <label class="label" for="task-name">Task Name</label>
+        <input
+          class="input"
+          type="text"
+          placeholder="meditate for 5 minutes"
+          id="task-name"
+        />
+        <button class="btn" onclick="createTask()">Create Task</button>
+      </div>
+    </div>
+    <script src="js/classes.js"></script>
+    <script src="js/functions.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

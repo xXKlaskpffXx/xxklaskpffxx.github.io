@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none; /* Safari */
+  user-select: none; /* Standard syntax */
+}
+
+body {
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--ap-color);
+  height: 100vh;
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  color: var(--sec-color);
+  width: 100%;
+  font-size: 2rem;
+  padding: 1.2rem;
+  border-bottom: 1px solid var(--ter-color);
+  margin-bottom: 2.4rem;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  position: relative;
+  color: var(--prim-color);
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  gap: 0.8rem;
+  padding: 0.8rem 1.2rem;
+  border-bottom: 1px solid var(--ter-color);
+  transition: 0.4s;
+}
+
+.task.completed {
+  color: var(--sec-color);
+}
+
+.task span::before {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 0;
+  background-color: var(--sec-color);
+  height: 2px;
+  transition: 0.5s;
+}
+
+.task.completed span::before {
+  width: 75%;
+}
+
+.task-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.add-task {
+  cursor: pointer;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  height: 6.4rem;
+  align-items: flex-start;
+  font-size: 1.8rem;
+  border-top: 1px solid var(--ter-color);
+  color: var(--prim-color);
+  padding: 1.2rem;
+}
+
+.screen {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--ap-color);
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.screen-visible {
+  top: 0;
+}
+
+.task-creator {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

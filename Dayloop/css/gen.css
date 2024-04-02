@@ -1,0 +1,66 @@
+.text-center {
+  text-align: center;
+}
+
+.color-primary {
+  color: var(--prim-color);
+}
+
+.close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  height: 4.8rem;
+  width: 4.8rem;
+  font-size: 2.4rem;
+  border-radius: 50px;
+  background-color: transparent;
+  color: var(--prim-color);
+}
+
+.screen .close-btn {
+  z-index: 1;
+}
+
+.close-icon {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.label {
+  display: block;
+  color: var(--prim-color);
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.input {
+  font-family: inherit;
+  display: block;
+  background-color: var(--ter-color);
+  border: none;
+  color: var(--prim-color);
+  padding: 1.2rem;
+  border-radius: 15px;
+  margin-bottom: 3.2rem;
+  font-size: 1.8rem;
+  -webkit-user-select: auto; /* Safari */
+  user-select: all; /* Standard syntax */
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  background-color: var(--sec-color);
+  border: none;
+  color: var(--ter-color);
+  padding: 1.2rem 2.4rem;
+  border-radius: 15px;
+  font-size: 1.6rem;
+}

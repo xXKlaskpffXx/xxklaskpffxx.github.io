@@ -1,0 +1,8 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ap-color: #000;
+    --prim-color: #f8f9fa;
+    --sec-color: hsl(0, 0%, 70%);
+    --ter-color: #202327;
+  }
+}

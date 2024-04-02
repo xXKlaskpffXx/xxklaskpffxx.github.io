@@ -1,0 +1,8 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --ap-color: #f8f9fa;
+    --prim-color: #212529;
+    --sec-color: #868e96;
+    --ter-color: #e9ecef;
+  }
+}
